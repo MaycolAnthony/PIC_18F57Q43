@@ -13,7 +13,20 @@
 
 void main(void) {
     Clock_Config();
+    //SALIDA DIGITAL PARA RF3
+    TRISF=0x00;//salida digital
+    ANSELF=0x00;//PINES DIGITALES
+    WPUF=0x00;//Desabilitamos las resistencias pull up
+    INLVLF=0x00;///TTL
+    ODCONF= 0x00;//PUSH-PULL
+    SLRCONF=0XFF;//LIMITADO
+    
+    
     while(1){
+        LATF=0x08;
+        __delay_ms(200);
+        LATF=0x00;
+        __delay_ms(200);
         
     }
     return;

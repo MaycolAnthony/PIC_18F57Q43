@@ -28855,7 +28855,20 @@ void Clock_Config(void);
 
 void main(void) {
     Clock_Config();
+
+    TRISF=0x00;
+    ANSELF=0x00;
+    WPUF=0x00;
+    INLVLF=0x00;
+    ODCONF= 0x00;
+    SLRCONF=0XFF;
+
+
     while(1){
+        LATF=0x08;
+        _delay((unsigned long)((200)*(64000000UL/4000.0)));
+        LATF=0x00;
+        _delay((unsigned long)((200)*(64000000UL/4000.0)));
 
     }
     return;

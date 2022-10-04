@@ -35,10 +35,24 @@
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5449
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"41150
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"41212
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"41274
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"41336
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"41398
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+"47793
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+"48135
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
 "14 C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"20
+"33
 } 0
 "66 C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
 [v _Clock_Config Clock_Config `(v  1 e 1 0 ]

@@ -12,12 +12,13 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/default/production\Primeros_pasos.X.production.o
-cinit CODE 0 1FFDE 1FFDE 6 1 2
+cinit CODE 0 1FF8E 1FF8E 6 1 2
 idloc IDLOC 5 200000 200000 40 1 1
-text0 CODE 0 1FFF0 1FFF0 C 1 2
-text1 CODE 0 1FFE4 1FFE4 C 1 2
+text0 CODE 0 1FFA0 1FFA0 5C 1 2
+text1 CODE 0 1FF94 1FF94 C 1 2
+cstackCOMRAM COMRAM 1 501 501 2 1 1
 config CONFIG 4 300000 300000 A 1 1
-$C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+$C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 idloc IDLOC 5 200000 200000 40 1 1
 init CODE 0 1FFFC 1FFFC 4 1 2
 reset_vec CODE 0 0 0 4 1 2
@@ -36,9 +37,9 @@ BANK6 600-6FF 1
 BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
-CONST 4-1FFDD 1
-SMALLCONST 2500-1FFDD 1
-CODE 4-1FFDD 1
+CONST 4-1FF8D 1
+SMALLCONST 2500-1FF8D 1
+CODE 4-1FF8D 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
@@ -66,14 +67,14 @@ BANK33 2100-21FF 1
 BANK34 2200-22FF 1
 BANK35 2300-23FF 1
 BANK36 2400-24FF 1
-BIGRAM 501-24FF 1
+BIGRAM 503-24FF 1
 BIGSFR 0-4FF 1
 BIGSFR 2500-25FF 1
-COMRAM 501-55F 1
+COMRAM 503-55F 1
 CONFIG 30000A-300011 1
 EEDATA 380000-3803FF 1
 MEDIUMCONST 2500-FFFF 1
-MEDIUMCONST 12500-1FFDD 1
+MEDIUMCONST 12500-1FF8D 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -88,20 +89,28 @@ MEDIUMCONST 12500-1FFDD 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Primeros_pasos.X.production.o
-1FFE4 text1 CODE >66:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
-1FFE4 text1 CODE >68:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
-1FFEA text1 CODE >69:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
-1FFEE text1 CODE >71:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
-1FFF0 text0 CODE >14:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
-1FFF0 text0 CODE >15:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
-1FFF4 text0 CODE >16:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
-1FFF4 text0 CODE >18:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
-1FFDE cinit CODE >3561:C:\Users\mayco\AppData\Local\Temp\xcAsd3o.s
-1FFDE cinit CODE >3563:C:\Users\mayco\AppData\Local\Temp\xcAsd3o.s
-1FFDE cinit CODE >3566:C:\Users\mayco\AppData\Local\Temp\xcAsd3o.s
-1FFDE cinit CODE >3572:C:\Users\mayco\AppData\Local\Temp\xcAsd3o.s
-1FFDE cinit CODE >3574:C:\Users\mayco\AppData\Local\Temp\xcAsd3o.s
-1FFE0 cinit CODE >3575:C:\Users\mayco\AppData\Local\Temp\xcAsd3o.s
+1FF94 text1 CODE >66:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
+1FF94 text1 CODE >68:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
+1FF9A text1 CODE >69:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
+1FF9E text1 CODE >71:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\config.c
+1FFA0 text0 CODE >14:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFA0 text0 CODE >15:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFA4 text0 CODE >17:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFA8 text0 CODE >18:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFAE text0 CODE >19:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFB2 text0 CODE >20:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFB6 text0 CODE >21:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFBA text0 CODE >22:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFBC text0 CODE >26:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFC0 text0 CODE >27:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFD8 text0 CODE >28:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FFDC text0 CODE >29:C:\Users\mayco\Documents\GitHub\PIC_18F57Q43\Learning\Primeros_pasos.X\main.c
+1FF8E cinit CODE >3575:C:\Users\mayco\AppData\Local\Temp\xcAsbt8.s
+1FF8E cinit CODE >3577:C:\Users\mayco\AppData\Local\Temp\xcAsbt8.s
+1FF8E cinit CODE >3580:C:\Users\mayco\AppData\Local\Temp\xcAsbt8.s
+1FF8E cinit CODE >3586:C:\Users\mayco\AppData\Local\Temp\xcAsbt8.s
+1FF8E cinit CODE >3588:C:\Users\mayco\AppData\Local\Temp\xcAsbt8.s
+1FF90 cinit CODE >3589:C:\Users\mayco\AppData\Local\Temp\xcAsbt8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -116,34 +125,39 @@ $dist/default/production\Primeros_pasos.X.production.o
 %SYMTAB
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Primeros_pasos.X.production.o
 __Hspace_0 20000 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
-__Hspace_1 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
+__Hspace_1 503 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Primeros_pasos.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Primeros_pasos.X.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Primeros_pasos.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-_main 1FFF0 0 CODE 0 text0 dist/default/production\Primeros_pasos.X.production.o
-start 1FFFC 0 CODE 0 init C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+_LATF 4C3 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
+_WPUF 429 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+_main 1FFA0 0 CODE 0 text0 dist/default/production\Primeros_pasos.X.production.o
+start 1FFFC 0 CODE 0 init C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\Primeros_pasos.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-intlevel0 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-intlevel1 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-intlevel2 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-intlevel3 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+__accesstop 560 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+intlevel0 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+intlevel1 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+intlevel2 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+intlevel3 0 0 CODE 0 text C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Primeros_pasos.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\Primeros_pasos.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\Primeros_pasos.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+_ANSELF 428 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Primeros_pasos.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Primeros_pasos.X.production.o
-start_initialization 1FFDE 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
+_INLVLF 42C 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
+start_initialization 1FF8E 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
+_ODCONF 42A 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 _OSCFRQ B1 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Primeros_pasos.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+isa$xinst 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 __Hbank5 0 0 ABS 0 bank5 dist/default/production\Primeros_pasos.X.production.o
 __Hbank6 0 0 ABS 0 bank6 dist/default/production\Primeros_pasos.X.production.o
 __Hbank7 0 0 ABS 0 bank7 dist/default/production\Primeros_pasos.X.production.o
@@ -189,7 +203,7 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/production\Primeros_pasos.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Primeros_pasos.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Primeros_pasos.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Primeros_pasos.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\Primeros_pasos.X.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\Primeros_pasos.X.production.o
 __Lbank5 0 0 ABS 0 bank5 dist/default/production\Primeros_pasos.X.production.o
@@ -227,7 +241,7 @@ __Ltext 0 0 ABS 0 text dist/default/production\Primeros_pasos.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Primeros_pasos.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\Primeros_pasos.X.production.o
 __S0 20000 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
-__S1 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
+__S1 503 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Primeros_pasos.X.production.o
@@ -270,40 +284,42 @@ __Lcomram 0 0 ABS 0 comram dist/default/production\Primeros_pasos.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\Primeros_pasos.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Primeros_pasos.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Primeros_pasos.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-stackhi 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-stacklo 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+isa$std 1 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+stackhi 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+stacklo 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 _OSCCON1 AD 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\Primeros_pasos.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
-_Clock_Config 1FFE4 0 CODE 0 text1 dist/default/production\Primeros_pasos.X.production.o
+_Clock_Config 1FF94 0 CODE 0 text1 dist/default/production\Primeros_pasos.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Primeros_pasos.X.production.o
-end_of_initialization 1FFDE 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
+end_of_initialization 1FF8E 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Primeros_pasos.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Primeros_pasos.X.production.o
 __Lramtop 2500 0 RAM 0 ramtop dist/default/production\Primeros_pasos.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\Primeros_pasos.X.production.o
-__pcinit 1FFDE 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
-__ptext0 1FFF0 0 CODE 0 text0 dist/default/production\Primeros_pasos.X.production.o
-__ptext1 1FFE4 0 CODE 0 text1 dist/default/production\Primeros_pasos.X.production.o
+__pcinit 1FF8E 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
+__ptext0 1FFA0 0 CODE 0 text0 dist/default/production\Primeros_pasos.X.production.o
+__ptext1 1FF94 0 CODE 0 text1 dist/default/production\Primeros_pasos.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\Primeros_pasos.X.production.o
-__ramtop 2500 0 RAM 0 ramtop C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+__ramtop 2500 0 RAM 0 ramtop C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Primeros_pasos.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Primeros_pasos.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Primeros_pasos.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
-___heap_lo 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsd3o.o
+_SLRCONF 42B 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
+___heap_lo 0 0 ABS 0 - C:\Users\mayco\AppData\Local\Temp\xcAsbt8.o
 ___param_bank 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Primeros_pasos.X.production.o
-__end_of__initialization 1FFDE 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
+__end_of__initialization 1FF8E 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\Primeros_pasos.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\Primeros_pasos.X.production.o
-__end_of_Clock_Config 1FFF0 0 CODE 0 text1 dist/default/production\Primeros_pasos.X.production.o
-__pcstackCOMRAM 0 0 COMRAM 1 cstackCOMRAM dist/default/production\Primeros_pasos.X.production.o
+__end_of_Clock_Config 1FFA0 0 CODE 0 text1 dist/default/production\Primeros_pasos.X.production.o
+__pcstackCOMRAM 501 0 COMRAM 1 cstackCOMRAM dist/default/production\Primeros_pasos.X.production.o
 __end_of_main 1FFFC 0 CODE 0 text0 dist/default/production\Primeros_pasos.X.production.o
+_TRISF 4CB 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Hbss 0 0 RAM 1 bss dist/default/production\Primeros_pasos.X.production.o
 __Hram 0 0 ABS 0 ram dist/default/production\Primeros_pasos.X.production.o
@@ -312,7 +328,7 @@ __LRAM 1 0 ABS 0 - dist/default/production\Primeros_pasos.X.production.o
 __Lbss 0 0 RAM 1 bss dist/default/production\Primeros_pasos.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\Primeros_pasos.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\Primeros_pasos.X.production.o
-__initialization 1FFDE 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
+__initialization 1FF8E 0 CODE 0 cinit dist/default/production\Primeros_pasos.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\Primeros_pasos.X.production.o
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Primeros_pasos.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\Primeros_pasos.X.production.o
@@ -341,9 +357,10 @@ __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Primeros_pasos
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 1FFDE 1FFDE 6 1
-text0 0 1FFF0 1FFF0 C 1
-text1 0 1FFE4 1FFE4 C 1
+cinit 0 1FF8E 1FF8E 6 1
+text0 0 1FFA0 1FFA0 5C 1
+text1 0 1FF94 1FF94 C 1
+cstackCOMRAM 1 501 501 2 1
 init 0 1FFFC 1FFFC 4 1
 reset_vec 0 0 0 4 1
 # %NOTES Section

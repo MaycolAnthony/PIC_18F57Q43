@@ -3,6 +3,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 ./config.h
 [; ;./config.h: 12: void Clock_Config(void);
 [v _Clock_Config `(v ~T0 @X0 0 ef ]
+"48135 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 48135: extern volatile unsigned char TRISF __attribute__((address(0x4CB)));
+[v _TRISF `Vuc ~T0 @X0 0 e@1227 ]
+"41150
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 41150: extern volatile unsigned char ANSELF __attribute__((address(0x428)));
+[v _ANSELF `Vuc ~T0 @X0 0 e@1064 ]
+"41212
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 41212: extern volatile unsigned char WPUF __attribute__((address(0x429)));
+[v _WPUF `Vuc ~T0 @X0 0 e@1065 ]
+"41398
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 41398: extern volatile unsigned char INLVLF __attribute__((address(0x42C)));
+[v _INLVLF `Vuc ~T0 @X0 0 e@1068 ]
+"41274
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 41274: extern volatile unsigned char ODCONF __attribute__((address(0x42A)));
+[v _ODCONF `Vuc ~T0 @X0 0 e@1066 ]
+"41336
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 41336: extern volatile unsigned char SLRCONF __attribute__((address(0x42B)));
+[v _SLRCONF `Vuc ~T0 @X0 0 e@1067 ]
+"47793
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 47793: extern volatile unsigned char LATF __attribute__((address(0x4C3)));
+[v _LATF `Vuc ~T0 @X0 0 e@1219 ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
 "329 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h: 329: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2566,20 +2591,50 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15
 [; ;main.c: 15:     Clock_Config();
 [e ( _Clock_Config ..  ]
-"16
-[; ;main.c: 16:     while(1){
+"17
+[; ;main.c: 17:     TRISF=0x00;
+[e = _TRISF -> -> 0 `i `uc ]
+"18
+[; ;main.c: 18:     ANSELF=0x00;
+[e = _ANSELF -> -> 0 `i `uc ]
+"19
+[; ;main.c: 19:     WPUF=0x00;
+[e = _WPUF -> -> 0 `i `uc ]
+"20
+[; ;main.c: 20:     INLVLF=0x00;
+[e = _INLVLF -> -> 0 `i `uc ]
+"21
+[; ;main.c: 21:     ODCONF= 0x00;
+[e = _ODCONF -> -> 0 `i `uc ]
+"22
+[; ;main.c: 22:     SLRCONF=0XFF;
+[e = _SLRCONF -> -> 255 `i `uc ]
+"25
+[; ;main.c: 25:     while(1){
 [e :U 2359 ]
 {
-"18
-[; ;main.c: 18:     }
+"26
+[; ;main.c: 26:         LATF=0x08;
+[e = _LATF -> -> 8 `i `uc ]
+"27
+[; ;main.c: 27:         _delay((unsigned long)((200)*(64000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `ul `d .4000.0 `ul ]
+"28
+[; ;main.c: 28:         LATF=0x00;
+[e = _LATF -> -> 0 `i `uc ]
+"29
+[; ;main.c: 29:         _delay((unsigned long)((200)*(64000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 64000000 `ul `d .4000.0 `ul ]
+"31
+[; ;main.c: 31:     }
 }
 [e :U 2358 ]
 [e $U 2359  ]
 [e :U 2360 ]
-"19
-[; ;main.c: 19:     return;
+"32
+[; ;main.c: 32:     return;
 [e $UE 2357  ]
-"20
-[; ;main.c: 20: }
+"33
+[; ;main.c: 33: }
 [e :UE 2357 ]
 }
