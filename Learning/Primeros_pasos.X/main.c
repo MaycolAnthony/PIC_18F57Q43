@@ -13,7 +13,8 @@
 
 void main(void) {
     Clock_Config();
-    //SALIDA DIGITAL PARA RF3
+    
+    //SALIDA DIGITAL PARA RF3 CON BYTE
     TRISF=0x00;//salida digital
     ANSELF=0x00;//PINES DIGITALES
     WPUF=0x00;//Desabilitamos las resistencias pull up
